@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>西班牙语过去时综合互动练习</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+        .section {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+        .question {
+            margin-bottom: 15px;
+            font-size: 16px;
+        }
+        input[type="text"] {
+            padding: 5px 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            width: 150px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        input[type="text"]:focus {
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+        }
+        .correct {
+            background-color: #d4edda !important;
+            border-color: #28a745 !important;
+            color: #155724;
+        }
+        .incorrect {
+            background-color: #f8d7da !important;
+            border-color: #dc3545 !important;
+            color: #721c24;
+        }
+        .feedback {
+            font-size: 14px;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        .text-correct { color: #28a745; }
+        .text-incorrect { color: #dc3545; }
+        .story-text {
+            line-height: 2.2;
+        }
+        #submit-btn {
+            display: block;
+            width: 100%;
+            padding: 15px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #3498db;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+            transition: background 0.3s;
+        }
+        #submit-btn:hover {
+            background-color: #2980b9;
+        }
+        #result-area {
+            margin-top: 20px;
+            padding: 15px;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            text-align: center;
+            display: none;
+        }
+        .hint {
+            color: #7f8c8d;
+            font-size: 14px;
+            margin-top: -5px;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🇪🇸 西班牙语过去时综合互动练习</h1>
+    <p>包含简单过去时、过去未完成时、过去完成时。填写完毕后点击最下方的“提交批改”按钮。</p>
+
+    <div class="section">
+        <h2>第一部分：变位极速反应 (20 题)</h2>
+        <p class="hint">请注意重音符号（无需大写）</p>
+        
+        <div class="question">1. yo / hacer / 简单过去时 ➔ <input type="text" data-answer="hice"> <span class="feedback"></span></div>
+        <div class="question">2. él / leer / 简单过去时 ➔ <input type="text" data-answer="leyó"> <span class="feedback"></span></div>
+        <div class="question">3. nosotros / ir / 过去未完成时 ➔ <input type="text" data-answer="íbamos"> <span class="feedback"></span></div>
+        <div class="question">4. ellos / construir / 简单过去时 ➔ <input type="text" data-answer="construyeron"> <span class="feedback"></span></div>
+        <div class="question">5. tú / ver / 过去未完成时 ➔ <input type="text" data-answer="veías"> <span class="feedback"></span></div>
+        <div class="question">6. yo / decir / 过去完成时 ➔ <input type="text" data-answer="había dicho"> <span class="feedback"></span></div>
+        <div class="question">7. ella / pedir / 简单过去时 ➔ <input type="text" data-answer="pidió"> <span class="feedback"></span></div>
+        <div class="question">8. vosotros / ser / 过去未完成时 ➔ <input type="text" data-answer="erais"> <span class="feedback"></span></div>
+        <div class="question">9. nosotros / estar / 简单过去时 ➔ <input type="text" data-answer="estuvimos"> <span class="feedback"></span></div>
+        <div class="question">10. él / hacer / 过去完成时 ➔ <input type="text" data-answer="había hecho"> <span class="feedback"></span></div>
+        <div class="question">11. yo / llegar / 简单过去时 ➔ <input type="text" data-answer="llegué"> <span class="feedback"></span></div>
+        <div class="question">12. ellos / tener / 过去未完成时 ➔ <input type="text" data-answer="tenían"> <span class="feedback"></span></div>
+        <div class="question">13. tú / abrir / 过去完成时 ➔ <input type="text" data-answer="habías abierto"> <span class="feedback"></span></div>
+        <div class="question">14. yo / reír / 简单过去时 ➔ <input type="text" data-answer="reí"> <span class="feedback"></span></div>
+        <div class="question">15. él / reír / 简单过去时 ➔ <input type="text" data-answer="rio"> <span class="feedback"></span></div>
+        <div class="question">16. ellos / poner / 简单过去时 ➔ <input type="text" data-answer="pusieron"> <span class="feedback"></span></div>
+        <div class="question">17. nosotros / caber / 简单过去时 ➔ <input type="text" data-answer="cupimos"> <span class="feedback"></span></div>
+        <div class="question">18. tú / volver / 过去完成时 ➔ <input type="text" data-answer="habías vuelto"> <span class="feedback"></span></div>
+        <div class="question">19. yo / empezar / 简单过去时 ➔ <input type="text" data-answer="empecé"> <span class="feedback"></span></div>
+        <div class="question">20. ella / huir / 简单过去时 ➔ <input type="text" data-answer="huyó"> <span class="feedback"></span></div>
+    </div>
+
+    <div class="section">
+        <h2>第二部分：语境与时态辨析 (11 题)</h2>
+        <p class="hint">请根据句子的提示词和语境填入正确的过去时态</p>
+
+        <div class="question">21. Ayer, yo <input type="text" data-answer="fui"> (ir) al cine con mis amigos. <span class="feedback"></span></div>
+        <div class="question">22. Cuando era niño, siempre <input type="text" data-answer="jugaba"> (jugar) al fútbol en el parque. <span class="feedback"></span></div>
+        <div class="question">23. Cuando llegué a la estación de tren, el tren ya <input type="text" data-answer="había salido"> (salir). <span class="feedback"></span></div>
+        <div class="question">24. Mientras yo <input type="text" data-answer="leía"> (leer) un libro en el sofá, el teléfono <input type="text" data-answer="sonó"> (sonar) de repente. <span class="feedback"></span></div>
+        <div class="question">25. Anoche nosotros <input type="text" data-answer="hicimos"> (hacer) la cena y después <input type="text" data-answer="vimos"> (ver) una película. <span class="feedback"></span></div>
+        <div class="question">26. Antes de viajar a España, yo nunca <input type="text" data-answer="había comido"> (comer) paella. <span class="feedback"></span></div>
+        <div class="question">27. En el año 2010, ellos <input type="text" data-answer="construyeron"> (construir) esta casa. <span class="feedback"></span></div>
+        <div class="question">28. Ella <input type="text" data-answer="tenía"> (tener) 20 años cuando <input type="text" data-answer="conoció"> (conocer) a su esposo. <span class="feedback"></span></div>
+        <div class="question">29. Aquel día, el cielo <input type="text" data-answer="estaba"> (estar) muy nublado y <input type="text" data-answer="hacía"> (hacer) mucho frío. <span class="feedback"></span></div>
+        <div class="question">30. Yo no quise comer más porque ya <input type="text" data-answer="había cenado"> (cenar) en casa. <span class="feedback"></span></div>
+        <div class="question">31. Todo estaba muy tranquilo hasta que, de repente, <input type="text" data-answer="empezó"> (empezar) a llover. <span class="feedback"></span></div>
+    </div>
+
+    <div class="section story-text">
+        <h2>第三部分：综合叙事语篇填空 (15 题)</h2>
+        <p class="hint">分析动作是故事的背景（未完成）、突发事件（简单过去），还是过去的过去（过去完成时）。</p>
+        
+        El año pasado, mis amigos y yo 32.<input type="text" data-answer="decidimos"> <span class="feedback"></span> (decidir) hacer un viaje a las montañas. El día del viaje, el sol 33.<input type="text" data-answer="brillaba"> <span class="feedback"></span> (brillar) y los pájaros 34.<input type="text" data-answer="cantaban"> <span class="feedback"></span> (cantar). Nosotros 35.<input type="text" data-answer="estábamos"> <span class="feedback"></span> (estar) muy emocionados.<br><br>
+
+        Cuando 36.<input type="text" data-answer="llegamos"> <span class="feedback"></span> (llegar) al refugio en la montaña, nos dimos cuenta de que Juan 37.<input type="text" data-answer="había olvidado"> <span class="feedback"></span> (olvidar) las llaves en su casa. ¡No 38.<input type="text" data-answer="podíamos"> <span class="feedback"></span> (poder) entrar!<br><br>
+
+        Mientras Juan 39.<input type="text" data-answer="buscaba"> <span class="feedback"></span> (buscar) desesperadamente en su mochila por si estaban ahí, 40.<input type="text" data-answer="empezó"> <span class="feedback"></span> (empezar) a nevar. Yo me 41.<input type="text" data-answer="puse"> <span class="feedback"></span> (poner) muy nervioso porque nunca antes en mi vida 42.<input type="text" data-answer="había visto"> <span class="feedback"></span> (ver) tanta nieve junta.<br><br>
+
+        Afortunadamente, de repente 43.<input type="text" data-answer="apareció"> <span class="feedback"></span> (aparecer) un señor mayor que 44.<input type="text" data-answer="vivía"> <span class="feedback"></span> (vivir) cerca. Él nos 45.<input type="text" data-answer="dijo"> <span class="feedback"></span> (decir) que la puerta en realidad 46.<input type="text" data-answer="estaba"> <span class="feedback"></span> (estar) abierta desde el principio. ¡Qué vergüenza!
+    </div>
+
+    <button id="submit-btn" onclick="checkAnswers()">提交批改 (0/46)</button>
+    <div id="result-area"></div>
+
+    <script>
+        // 自动格式化输入，去除前后空格并转为小写
+        document.querySelectorAll('input[type="text"]').forEach(input => {
+            input.addEventListener('input', function() {
+                this.classList.remove('correct', 'incorrect');
+                this.nextElementSibling.innerHTML = '';
+            });
+        });
+
+        function checkAnswers() {
+            const inputs = document.querySelectorAll('input[type="text"]');
+            let score = 0;
+            const total = inputs.length;
+
+            inputs.forEach(input => {
+                const userAnswer = input.value.trim().toLowerCase();
+                // 允许多个正确答案（如果有的话，用 | 分隔），这里大部分是唯一答案
+                const correctAnswers = input.getAttribute('data-answer').toLowerCase().split('|');
+                const feedbackSpan = input.nextElementSibling;
+
+                if (userAnswer === "") {
+                    input.className = 'incorrect';
+                    feedbackSpan.innerHTML = `❌ 正确: <span class="text-correct">${correctAnswers[0]}</span>`;
+                    feedbackSpan.className = 'feedback text-incorrect';
+                } else if (correctAnswers.includes(userAnswer)) {
+                    input.className = 'correct';
+                    feedbackSpan.innerHTML = '✅';
+                    feedbackSpan.className = 'feedback text-correct';
+                    score++;
+                } else {
+                    input.className = 'incorrect';
+                    feedbackSpan.innerHTML = `❌ 正确: <span class="text-correct">${correctAnswers[0]}</span>`;
+                    feedbackSpan.className = 'feedback text-incorrect';
+                }
+            });
+
+            const resultArea = document.getElementById('result-area');
+            resultArea.style.display = 'block';
+            
+            const percentage = Math.round((score / total) * 100);
+            document.getElementById('submit-btn').innerText = `重新批改 (${score}/${total})`;
+
+            if (percentage === 100) {
+                resultArea.style.backgroundColor = '#d4edda';
+                resultArea.style.color = '#155724';
+                resultArea.innerHTML = `🎉 太棒了！满分通过 (${score}/${total})！`;
+            } else if (percentage >= 80) {
+                resultArea.style.backgroundColor = '#fff3cd';
+                resultArea.style.color = '#856404';
+                resultArea.innerHTML = `👍 非常好！得分: ${score}/${total}。重点复习一下错题的重音或不规则词根。`;
+            } else {
+                resultArea.style.backgroundColor = '#f8d7da';
+                resultArea.style.color = '#721c24';
+                resultArea.innerHTML = `💪 继续加油！得分: ${score}/${total}。请对照红字纠正错误。`;
+            }
+            
+            // 平滑滚动到底部看成绩
+            resultArea.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
